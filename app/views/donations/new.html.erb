@@ -1,3 +1,5 @@
+<%= form_with model: @donation_address, url: donations_path, local: true do |f| %>
+<%= render 'error_messages', model: @donation_address %>
 <%= form_with url: donations_path, local: true do |f| %>
   <h1>住所</h1>
   <div class="field">
